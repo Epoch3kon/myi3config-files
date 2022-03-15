@@ -28,14 +28,16 @@ font pango:Ubuntu 9
 
 # startup
 exec_always --no-startup-id wal -i ~/Pictures/background.png 
-exec_always --no-startup-id compton
+exec_always --no-startup-id pywal-discord 
 exec --no-startup-id sh ~/.screenlayout/s.sh
 exec --no-startup-id xrdb -merge ~/.Xresources
+exec_always --no-startup-id python /usr/local/searx/searx-src/searx/webapp.py
+#exec_always --no-startup-id mpv --start=13:15 Videos/initial/First/initial-d-first-stage-002.mp4
 # no title bar + gaps
 new_window pixel 0
 new_float pixel 0
-gaps inner 10
-gaps outer 10
+gaps inner 10 
+gaps outer 10 
 hide_edge_borders both
 
 
@@ -67,7 +69,7 @@ bindsym $mod+m exec urxvt -e cmus
 # start a monitoring program
 bindsym $mod+t exec urxvt -e htop
 # start a game called freesweep
-bindsym $mod+g exec urxvt -e freesweep
+bindsym $mod+g exec urxvt -e python /usr/local/searx/searx-src/searx/webapp.py
 # start a calender task
 bindsym $mod+c exec urxvt -e calcurse
 
@@ -171,6 +173,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+#change wallpapers
+bindsym $mod+o exec wal -i ~/Pictures/background.png
+bindsym $mod+p exec wal -i ~/Pictures/background2.png
+bindsym $mod+Shift+o exec wal -i ~/Pictures/background3.png
+
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -210,7 +218,7 @@ bindsym $mod+r mode "resize"
 #Color Set
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-
+set $transparent #1d2021A0
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
 client.focused_inactive $bg     $bg     $fg  $bg       $bg
