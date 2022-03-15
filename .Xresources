@@ -1,12 +1,12 @@
 !URxvt------------------------
-URxvt.font: xft:bitstream vera sans mono:size=14:antialias=true, xft:Font Awesome 5 Free-Regular-400:size=14, xft:FontAwesome:size=12
+URxvt.font: xft:mono:pixelsize=18, xft:Font Awesome 5 Free-Regular-400:size=14, xft:FontAwesome:size=12
 urxvt*termName: 		rxvt
 urxvt*scrollBar: 		false
 urxvt*matcher.button: 		1
 urxvt.transparent: 		true
 urxvt.shading:			20
 urxvt*depth: 			32
-urxvt*background: 		blue
+urxvt*background: 		rgba:4100/4800/5800/c800
 urxvt.boldFont:
 Xft*dpi: 			96
 Xft*antialias: 			true
@@ -19,7 +19,7 @@ URxvt*fading: 			0
 URxvt*tintColor: 		#ffffff
 URxvt*shading: 			0
 URxvt*inheritPixmap: 		False
-*background:			#5294e2
+*background:			#2f343f
 *foreground: 			#d7d7d7
 *cursorColor: 			#c7c7c7
 *highlightTextColor: 		#383c4a
