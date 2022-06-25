@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Installing dependencies"
-sudo emerge --ask feh xorg-x11 i3-gaps
+sudo pacman -Sy python-pywal i3-gaps xorg-xinit feh
 echo "Copying Config files"
 cp .Xresources ~/.Xresources
 cp config ~/.config/i3/config
