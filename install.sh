@@ -12,3 +12,4 @@ mkdir Pictures
 cp background.png ~/Pictures/background.png
 xrdb -merge ~/.Xresources
 cp .xinitrc ~/.xinitrc
+cp .zshrc ~/.zshrc
