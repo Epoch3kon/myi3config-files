@@ -9,6 +9,6 @@ mkdir config/
 mkdir config/i3
 sudo cp i3blocks.conf /etc/i3blocks.conf
 mkdir Pictures
-cp background.png ~/Pictures/
-xrdb -merge ~/Pictures/background.png
-cp .xinitrc ~/
+cp background.png ~/Pictures/background.png
+xrdb -merge ~/.Xresources
+cp .xinitrc ~/.xinitrc
